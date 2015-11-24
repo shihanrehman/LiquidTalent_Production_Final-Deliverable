@@ -44,7 +44,8 @@ CSV.open("person_profiles.csv", "w") do |file|  #generate CSV file
   file << ["Name","Linkedin","Skills","Education","Experience"]
   		#puts file.class
   arrayOfPersons.length.times do |i|
-    file << [arrayOfPersons[i].name, arrayOfPersons[i].linkedin_url, arrayOfPersons[i].skills, arrayOfPersons[i].education, arrayOfPersons[i].experience]
+    file << [arrayOfPersons[i].name, arrayOfPersons[i].linkedin_url, arrayOfPersons[i].skills, arrayOfPersons[i].education, 
+    arrayOfPersons[i].experience]
 
   end
 end
