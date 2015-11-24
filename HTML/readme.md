@@ -1,0 +1,1 @@
+Running testClass.rb will generate the html markup of each profile page of each freelancer outputted in a text file
