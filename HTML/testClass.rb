@@ -6,15 +6,9 @@ require 'httpclient'
 load 'namescraper.rb' 
 
 #require NameScraper
-
-ns = NameScraper.new() #
-
-
-puts Dir.pwd
-
+ns = NameScraper.new() 
 #contains information of each freelancer i.e their name, education, work_history, linked_in
 arrayOfPersons = []
-
 urls = []
 i = 0
 loop do #scrape through multiple pages
@@ -32,11 +26,7 @@ loop do #scrape through multiple pages
 		   break
 		end	
 end
-
-puts urls
-
 #The code below generates text files of the html markup of each free lancer profile
-
 i = 0
 for url in urls
 	i = i + 1
