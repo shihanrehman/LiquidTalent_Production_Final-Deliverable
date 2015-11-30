@@ -1,7 +1,6 @@
 require 'open-uri' #Installed by default, This library allows us to access differnt URL's from within the text editor
 require 'nokogiri' #Not Installed by default: from Terminal, gem install nokogiri, This gem helps us read and search the HTML content of a webpage
-require 'csv' #Installed by default, This library generates a CSV
-require 'httpclient'
+require 'httpclient' #This gem opens the http server within the terminal
 
 load 'namescraper.rb' 
 
