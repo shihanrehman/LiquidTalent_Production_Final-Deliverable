@@ -24,7 +24,7 @@ loop do #scrape through multiple pages
 		page = Nokogiri::HTML(html) #parses variable html with NOKOgiri
 		#puts page.class 
 		page.css('div.photo a').each do |line| 
-			urls << line['href']	#Forces the extracted text in the html to name array
+			urls << line['href']	#Forces the extracted text in the html to urls array
 			#puts line.class 	
 		end
 		if page.css('a.profile-link').count == 0 	#breaks loop count when there are no more links to count
